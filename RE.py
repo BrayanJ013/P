@@ -46,14 +46,14 @@ def main():
     
     print("\n ---- Resultado ----")
     print(f"Puntos generados(rectangulo: {n})")
-    print(f"Puntos dentro de la elipse: {punto_elipse})")
-    print(f"Puntos dentro del circulo: {punto_circulo})")
+    print(f"Puntos dentro de la elipse: {punto_elipse}2")
+    print(f"Puntos dentro del circulo: {punto_circulo}")
     if punto_circulo==0:
         print("Nungun punto cayo en el circulo; use mas puntos")
         return
     
     area_elipse_mc=area_circulo*punto_elipse/punto_circulo
-    dif_mc = area_elipse_mc-area_circulo/punto_circulo
+    dif_mc = area_elipse_mc-area_circulo 
     
     print(f"\nDiferencia de areas por formula: {dif_formula:.4f} ")
     print(f"Diferencia de areas por Monte Carlo : {dif_mc:.4f}")
